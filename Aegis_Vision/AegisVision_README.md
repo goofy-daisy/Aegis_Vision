@@ -46,6 +46,8 @@ AegisVision is a production-grade system that detects, tracks, and assesses thre
 
 **Plus all Phase 2 features:** Behaviour classification, zone monitoring, swarm detection, SHAP explainability, SQLite persistence, API auth, map trajectories.
 
+Link with all the database and trial test results- https://drive.google.com/file/d/1orIUBe6Z986d_i6Lcf8jxDLZWftDyCme/view?usp=drive_link
+
 ---
 
 ## Quick Start
@@ -478,19 +480,13 @@ Services:
 
 ---
 
-## License
-
-MIT License - See LICENSE file for details.
-
----
-
 ## Citation
 
 ```bibtex
 @software{aegisvision2024,
   title={AegisVision: AI Drone Threat Detection System},
   author={Kushagra},
-  year={2024}
+  year={2026}
 }
 ```
 
