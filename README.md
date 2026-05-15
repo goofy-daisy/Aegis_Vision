@@ -477,19 +477,13 @@ Services:
 
 ---
 
-## License
-
-MIT License - See LICENSE file for details.
-
----
-
 ## Citation
 
 ```bibtex
 @software{aegisvision2024,
   title={AegisVision: AI Drone Threat Detection System},
   author={Kushagra},
-  year={2024}
+  year={2026}
 }
 ```
 
