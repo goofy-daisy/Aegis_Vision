@@ -46,6 +46,8 @@ AegisVision is a production-grade system that detects, tracks, and assesses thre
 
 **Plus all Phase 2 features:** Behaviour classification, zone monitoring, swarm detection, SHAP explainability, SQLite persistence, API auth, map trajectories.
 
+Link to full zip folder with dataset, trained model, and test outputs- https://drive.google.com/file/d/1orIUBe6Z986d_i6Lcf8jxDLZWftDyCme/view?usp=sharing
+
 ---
 
 ## Quick Start
