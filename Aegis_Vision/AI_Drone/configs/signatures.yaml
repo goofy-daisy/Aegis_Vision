@@ -1,0 +1,66 @@
+signatures:
+  - name: "Consumer Quadcopter (DJI class)"
+    bbox_area_min: 400
+    bbox_area_max: 2500
+    speed_min_mps: 0
+    speed_max_mps: 15
+    behaviour_patterns:
+      - "STATIONARY"
+      - "APPROACHING"
+      - "CIRCLING"
+    classes:
+      - "helicopter"
+      - "plane"
+    confidence_weight: 0.8
+
+  - name: "Fixed-Wing UAV"
+    bbox_area_min: 200
+    bbox_area_max: 1500
+    speed_min_mps: 10
+    speed_max_mps: 50
+    behaviour_patterns:
+      - "APPROACHING"
+      - "RETREATING"
+    classes:
+      - "plane"
+    confidence_weight: 0.85
+
+  - name: "Commercial Aircraft"
+    bbox_area_min: 1000
+    bbox_area_max: 8000
+    speed_min_mps: 40
+    speed_max_mps: 50
+    behaviour_patterns:
+      - "RETREATING"
+      - "APPROACHING"
+    classes:
+      - "plane"
+    confidence_weight: 0.9
+    adsb_expected: true
+
+  - name: "Ground Vehicle (Aerial View)"
+    bbox_area_min: 300
+    bbox_area_max: 3000
+    speed_min_mps: 0
+    speed_max_mps: 30
+    behaviour_patterns:
+      - "APPROACHING"
+      - "RETREATING"
+      - "STATIONARY"
+    classes:
+      - "car"
+      - "van"
+      - "truck"
+      - "bus"
+    confidence_weight: 0.75
+
+  - name: "Unknown Aerial Object"
+    bbox_area_min: 100
+    bbox_area_max: 10000
+    speed_min_mps: 0
+    speed_max_mps: 50
+    behaviour_patterns:
+      - "ERRATIC"
+      - "CIRCLING"
+    classes: []
+    confidence_weight: 0.5

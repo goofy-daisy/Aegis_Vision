@@ -1,0 +1,4 @@
+[2026-03-18 17:57:01] [DEBUG] [utils.bbox_utils] Box rejected: area 15.0 < minimum 16
+[2026-03-22 15:29:34] [DEBUG] [utils.bbox_utils] Box rejected: area 15.0 < minimum 16
+[2026-03-22 15:39:40] [DEBUG] [utils.bbox_utils] Box rejected: area 15.0 < minimum 16
+[2026-03-22 15:59:17] [DEBUG] [utils.bbox_utils] Box rejected: area 15.0 < minimum 16

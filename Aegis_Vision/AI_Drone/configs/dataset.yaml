@@ -1,0 +1,17 @@
+names:
+- pedestrian
+- bicycle
+- car
+- van
+- truck
+- bus
+- plane
+- ship
+- storage-tank
+- harbor
+- bridge
+- helicopter
+nc: 12
+path: K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\processed
+train: images/train
+val: images/val

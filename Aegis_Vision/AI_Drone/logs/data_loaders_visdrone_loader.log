@@ -1,0 +1,12 @@
+[2026-03-18 17:55:40] [INFO] [data.loaders.visdrone_loader] Detected official VisDrone structure: annotations in K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\visdrone\annotations
+[2026-03-18 17:55:49] [INFO] [data.loaders.visdrone_loader] VisDrone processing complete: 160 train, 40 val, 0 skipped
+[2026-03-18 17:55:49] [INFO] [data.loaders.visdrone_loader] dataset.yaml updated with path: K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\processed
+[2026-03-22 15:28:22] [INFO] [data.loaders.visdrone_loader] Detected official VisDrone structure: annotations in K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\visdrone\annotations
+[2026-03-22 15:28:30] [INFO] [data.loaders.visdrone_loader] VisDrone processing complete: 160 train, 40 val, 0 skipped
+[2026-03-22 15:28:30] [INFO] [data.loaders.visdrone_loader] dataset.yaml updated with path: K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\processed
+[2026-03-22 15:38:36] [INFO] [data.loaders.visdrone_loader] Detected official VisDrone structure: annotations in K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\visdrone\annotations
+[2026-03-22 15:38:39] [INFO] [data.loaders.visdrone_loader] VisDrone processing complete: 160 train, 40 val, 0 skipped
+[2026-03-22 15:38:39] [INFO] [data.loaders.visdrone_loader] dataset.yaml updated with path: K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\processed
+[2026-03-22 15:58:14] [INFO] [data.loaders.visdrone_loader] Detected official VisDrone structure: annotations in K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\visdrone\annotations
+[2026-03-22 15:58:17] [INFO] [data.loaders.visdrone_loader] VisDrone processing complete: 160 train, 40 val, 0 skipped
+[2026-03-22 15:58:17] [INFO] [data.loaders.visdrone_loader] dataset.yaml updated with path: K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\processed

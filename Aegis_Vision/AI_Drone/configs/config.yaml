@@ -1,0 +1,91 @@
+paths:
+  data_root: "data"
+  visdrone_raw: "data/visdrone"
+  dota_raw: "data/dota"
+  processed: "data/processed"
+  weights: "models/yolo/weights"
+  logs: "logs"
+  mlflow_tracking: "mlops/mlruns"
+  threat_model: "models/threat/threat_model.pkl"
+
+model:
+  yolo_weights_pretrained: "yolov8n.pt"
+  yolo_model_size: "n"
+  input_size: 640
+  confidence_threshold: 0.40
+  nms_iou_threshold: 0.45
+  max_detections: 20
+  device: "cpu"
+
+training:
+  epochs: 50
+  batch_size: 4
+  learning_rate: 0.001
+  val_split: 0.2
+  resume: false
+  patience: 10
+  save_period: 5
+
+tracking:
+  max_age: 30
+  min_hits: 3
+  iou_threshold: 0.3
+  max_tracks: 20
+
+threat:
+  weights:
+    proximity: 0.45
+    speed: 0.35
+    class_danger: 0.20
+  dangerous_classes: ["car", "van", "truck", "bus"]
+  high_threat_threshold: 0.70
+  medium_threat_threshold: 0.40
+  proximity_max_meters: 500.0
+  speed_max_mps: 50.0
+
+simulation:
+  fog_intensity: 0.4
+  blur_kernel_max: 15
+  noise_std: 25.0
+  telemetry_update_hz: 10
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  max_upload_mb: 100
+  websocket_fps: 15
+
+dashboard:
+  port: 8501
+  max_fps_display: 30
+  map_center_lat: -37.8136
+  map_center_lon: 144.9631
+
+mlflow:
+  experiment_name: "AegisVision"
+  run_name_prefix: "run"
+  tags:
+    project: "AegisVision"
+    version: "1.0"
+
+thermal_model:
+  weights: "models/yolo/weights/best_thermal.pt"
+  enabled: true
+
+classifier:
+  weights: "models/classifier/weights/classifier.pt"
+  enabled: false
+  confidence_threshold: 0.7
+
+prediction:
+  enabled: true
+  horizon_seconds: 30
+  min_history_frames: 10
+  warning_threshold_seconds: 20
+
+adsb:
+  enabled: true
+  query_interval_seconds: 5
+  match_radius_meters: 500
+  opensky_url: "https://opensky-network.org/api/states/all"
+  bbox_degrees: 0.1

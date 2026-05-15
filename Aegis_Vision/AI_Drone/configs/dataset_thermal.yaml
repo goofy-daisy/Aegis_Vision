@@ -1,0 +1,9 @@
+names:
+- person
+- car
+- bicycle
+- other-vehicle
+nc: 4
+path: K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\processed_thermal
+train: images/train
+val: images/val

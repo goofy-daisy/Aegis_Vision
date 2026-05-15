@@ -1,0 +1,43 @@
+[2026-03-18 22:13:13] [INFO] [mlops.tracker] Created new MLflow experiment: AegisVision
+[2026-03-18 22:13:13] [INFO] [mlops.tracker] MLflowTracker initialized: experiment=AegisVision
+[2026-03-18 22:13:16] [INFO] [mlops.tracker] MLflow run started: run_20260318_221313 (ID: 12ac1770128840239293698f991ebd75)
+[2026-03-18 22:13:16] [DEBUG] [mlops.tracker] Logged 7 parameters
+[2026-03-19 01:36:09] [INFO] [mlops.tracker] MLflow run ended: 12ac1770128840239293698f991ebd75
+[2026-03-19 01:48:01] [DEBUG] [mlops.tracker] Using existing experiment: AegisVision
+[2026-03-19 01:48:01] [INFO] [mlops.tracker] MLflowTracker initialized: experiment=AegisVision
+[2026-03-19 01:48:02] [INFO] [mlops.tracker] MLflow run started: run_20260319_014801 (ID: a65cad275f4243879899a7f731c893e3)
+[2026-03-19 01:48:02] [DEBUG] [mlops.tracker] Logged 7 parameters
+[2026-03-19 15:40:28] [DEBUG] [mlops.tracker] Using existing experiment: AegisVision
+[2026-03-19 15:40:28] [INFO] [mlops.tracker] MLflowTracker initialized: experiment=AegisVision
+[2026-03-19 15:40:29] [INFO] [mlops.tracker] MLflow run started: run_20260319_154028 (ID: dc83401de7694f3d987506ad029e9c60)
+[2026-03-19 15:40:29] [DEBUG] [mlops.tracker] Logged 7 parameters
+[2026-03-19 17:20:55] [DEBUG] [mlops.tracker] Logged 4 metrics
+[2026-03-19 17:20:56] [INFO] [mlops.tracker] MLflow run ended: dc83401de7694f3d987506ad029e9c60
+[2026-03-22 19:23:40] [DEBUG] [mlops.tracker] Using existing experiment: AegisVision
+[2026-03-22 19:23:40] [INFO] [mlops.tracker] MLflowTracker initialized: experiment=AegisVision
+[2026-03-22 19:23:41] [INFO] [mlops.tracker] MLflow run started: run_20260322_192340 (ID: 6a9e1d6396594ecb802d08fe31352928)
+[2026-03-22 19:23:41] [DEBUG] [mlops.tracker] Logged 7 parameters
+[2026-03-22 19:27:28] [DEBUG] [mlops.tracker] Using existing experiment: AegisVision
+[2026-03-22 19:27:28] [INFO] [mlops.tracker] MLflowTracker initialized: experiment=AegisVision
+[2026-03-22 19:27:31] [INFO] [mlops.tracker] MLflow run started: run_20260322_192728 (ID: 9e8520bef7254fd4bdfd255197ad2065)
+[2026-03-22 19:27:31] [DEBUG] [mlops.tracker] Logged 7 parameters
+[2026-03-22 19:28:31] [DEBUG] [mlops.tracker] Using existing experiment: AegisVision
+[2026-03-22 19:28:31] [INFO] [mlops.tracker] MLflowTracker initialized: experiment=AegisVision
+[2026-03-22 19:28:32] [INFO] [mlops.tracker] MLflow run started: run_20260322_192831 (ID: 9e229f8e122d47f0a54c54992b93ecb1)
+[2026-03-22 19:28:32] [DEBUG] [mlops.tracker] Logged 7 parameters
+[2026-03-22 19:37:31] [DEBUG] [mlops.tracker] Using existing experiment: AegisVision
+[2026-03-22 19:37:31] [INFO] [mlops.tracker] MLflowTracker initialized: experiment=AegisVision
+[2026-03-22 19:37:32] [INFO] [mlops.tracker] MLflow run started: run_20260322_193731 (ID: a855041e6f96411e86b4e5cc4883b6c2)
+[2026-03-22 19:37:33] [DEBUG] [mlops.tracker] Logged 7 parameters
+[2026-03-22 20:03:45] [DEBUG] [mlops.tracker] Logged 4 metrics
+[2026-03-22 20:03:45] [WARNING] [mlops.tracker] Artifact logging skipped (Windows path issue): Could not find a registered artifact repository for: k:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\mlops\mlruns\artifacts/a855041e6f96411e86b4e5cc4883b6c2/artifacts. Currently registered schemes are: ['', 'file', 's3', 'r2', 'gs', 'wasbs', 'ftp', 'sftp', 'dbfs', 'hdfs', 'viewfs', 'runs', 'models', 'http', 'https', 'mlflow-artifacts', 'abfss']
+[2026-03-22 20:03:45] [WARNING] [mlops.tracker] Model registration skipped (Windows path issue): Could not find a registered artifact repository for: k:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\mlops\mlruns\artifacts/a855041e6f96411e86b4e5cc4883b6c2/artifacts. Currently registered schemes are: ['', 'file', 's3', 'r2', 'gs', 'wasbs', 'ftp', 'sftp', 'dbfs', 'hdfs', 'viewfs', 'runs', 'models', 'http', 'https', 'mlflow-artifacts', 'abfss']
+[2026-03-22 20:03:45] [INFO] [mlops.tracker] MLflow run ended: a855041e6f96411e86b4e5cc4883b6c2
+[2026-03-22 20:09:54] [DEBUG] [mlops.tracker] Using existing experiment: AegisVision
+[2026-03-22 20:09:54] [INFO] [mlops.tracker] MLflowTracker initialized: experiment=AegisVision
+[2026-03-22 20:09:58] [INFO] [mlops.tracker] MLflow run started: run_20260322_200954 (ID: 68cd14a67b18492793de607cc9434d7b)
+[2026-03-22 20:09:58] [DEBUG] [mlops.tracker] Logged 7 parameters
+[2026-03-22 20:12:22] [DEBUG] [mlops.tracker] Logged 4 metrics
+[2026-03-22 20:12:23] [WARNING] [mlops.tracker] Artifact logging skipped (Windows path issue): Could not find a registered artifact repository for: k:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\mlops\mlruns\artifacts/68cd14a67b18492793de607cc9434d7b/artifacts. Currently registered schemes are: ['', 'file', 's3', 'r2', 'gs', 'wasbs', 'ftp', 'sftp', 'dbfs', 'hdfs', 'viewfs', 'runs', 'models', 'http', 'https', 'mlflow-artifacts', 'abfss']
+[2026-03-22 20:12:23] [WARNING] [mlops.tracker] Model registration skipped (Windows path issue): Could not find a registered artifact repository for: k:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\mlops\mlruns\artifacts/68cd14a67b18492793de607cc9434d7b/artifacts. Currently registered schemes are: ['', 'file', 's3', 'r2', 'gs', 'wasbs', 'ftp', 'sftp', 'dbfs', 'hdfs', 'viewfs', 'runs', 'models', 'http', 'https', 'mlflow-artifacts', 'abfss']
+[2026-03-22 20:12:23] [INFO] [mlops.tracker] MLflow run ended: 68cd14a67b18492793de607cc9434d7b

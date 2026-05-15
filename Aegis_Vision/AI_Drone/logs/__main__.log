@@ -1,0 +1,693 @@
+[2026-03-18 17:55:40] [INFO] [__main__] === AegisVision Data Preparation ===
+[2026-03-18 17:55:40] [INFO] [__main__] Processing VisDrone from K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\visdrone
+[2026-03-18 17:55:49] [INFO] [__main__] VisDrone: 160 train, 40 val, 0 skipped
+[2026-03-18 17:55:49] [INFO] [__main__] Processing DOTA from K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\dota
+[2026-03-18 17:57:10] [INFO] [__main__] DOTA: 154 train, 40 val, 6 skipped
+[2026-03-18 17:57:10] [INFO] [__main__] Data preparation complete. dataset.yaml updated.
+[2026-03-18 17:57:10] [INFO] [__main__] Run training with: python models/yolo/train.py
+[2026-03-18 22:13:16] [INFO] [__main__] MLflow run started: 12ac1770128840239293698f991ebd75
+[2026-03-18 22:13:16] [INFO] [__main__] Loading pretrained weights: yolov8n.pt
+[2026-03-18 22:13:17] [INFO] [__main__] Starting training on K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\configs\dataset.yaml
+[2026-03-18 22:13:17] [INFO] [__main__] Epochs: 50, Batch: 4, Device: cpu
+[2026-03-19 01:36:09] [ERROR] [__main__] Training failed: Could not find a registered artifact repository for: k:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\mlops\mlruns\artifacts/12ac1770128840239293698f991ebd75/artifacts. Currently registered schemes are: ['', 'file', 's3', 'r2', 'gs', 'wasbs', 'ftp', 'sftp', 'dbfs', 'hdfs', 'viewfs', 'runs', 'models', 'http', 'https', 'mlflow-artifacts', 'abfss']
+[2026-03-19 01:48:02] [INFO] [__main__] MLflow run started: a65cad275f4243879899a7f731c893e3
+[2026-03-19 01:48:02] [INFO] [__main__] Loading pretrained weights: yolov8n.pt
+[2026-03-19 01:48:02] [INFO] [__main__] Starting training on K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\configs\dataset.yaml
+[2026-03-19 01:48:02] [INFO] [__main__] Epochs: 50, Batch: 4, Device: cpu
+[2026-03-19 15:40:29] [INFO] [__main__] MLflow run started: dc83401de7694f3d987506ad029e9c60
+[2026-03-19 15:40:29] [INFO] [__main__] Loading pretrained weights: yolov8n.pt
+[2026-03-19 15:40:30] [INFO] [__main__] Starting training on K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\configs\dataset.yaml
+[2026-03-19 15:40:30] [INFO] [__main__] Epochs: 20, Batch: 4, Device: cpu
+[2026-03-19 17:20:55] [INFO] [__main__] Training complete. mAP50: 0.1314, mAP50-95: 0.0745
+[2026-03-19 17:20:55] [INFO] [__main__] Best model copied from runs\detect\train\weights\best.pt to K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\models\yolo\weights\best.pt
+[2026-03-19 17:20:55] [ERROR] [__main__] Training failed: Could not find a registered artifact repository for: k:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\mlops\mlruns\artifacts/dc83401de7694f3d987506ad029e9c60/artifacts. Currently registered schemes are: ['', 'file', 's3', 'r2', 'gs', 'wasbs', 'ftp', 'sftp', 'dbfs', 'hdfs', 'viewfs', 'runs', 'models', 'http', 'https', 'mlflow-artifacts', 'abfss']
+[2026-03-22 15:28:22] [INFO] [__main__] === AegisVision Data Preparation ===
+[2026-03-22 15:28:22] [INFO] [__main__] Processing VisDrone from K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\visdrone
+[2026-03-22 15:28:30] [INFO] [__main__] VisDrone: 160 train, 40 val, 0 skipped
+[2026-03-22 15:28:30] [INFO] [__main__] Processing DOTA from K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\dota
+[2026-03-22 15:29:43] [INFO] [__main__] DOTA: 154 train, 40 val, 6 skipped
+[2026-03-22 15:29:43] [INFO] [__main__] Processing HIT-UAV thermal dataset from K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\hituav
+[2026-03-22 15:29:47] [INFO] [__main__] HIT-UAV: 160 train, 40 val, 0 skipped
+[2026-03-22 15:29:47] [INFO] [__main__] Data preparation complete. dataset.yaml updated.
+[2026-03-22 15:29:47] [INFO] [__main__] Run training with: python models/yolo/train.py
+[2026-03-22 15:30:16] [INFO] [__main__] === AegisVision Data Augmentation ===
+[2026-03-22 15:30:16] [INFO] [__main__] This expands your training set by generating fog, blur, noise, and combined variants.
+[2026-03-22 15:30:16] [INFO] [__main__] Augmenting 314 training images (will create 1570 augmented copies)
+[2026-03-22 15:30:21] [WARNING] [__main__] Augmentation noise failed for 0000001_02999_d_0000005: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:30:35] [WARNING] [__main__] Augmentation all failed for 0000001_02999_d_0000005: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:30:41] [WARNING] [__main__] Augmentation noise failed for 0000001_03499_d_0000006: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:30:52] [WARNING] [__main__] Augmentation all failed for 0000001_03499_d_0000006: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:30:57] [WARNING] [__main__] Augmentation noise failed for 0000001_03999_d_0000007: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:31:07] [WARNING] [__main__] Augmentation all failed for 0000001_03999_d_0000007: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:31:12] [WARNING] [__main__] Augmentation noise failed for 0000001_04527_d_0000008: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:31:21] [WARNING] [__main__] Augmentation all failed for 0000001_04527_d_0000008: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:31:27] [WARNING] [__main__] Augmentation noise failed for 0000001_05249_d_0000009: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:31:41] [WARNING] [__main__] Augmentation all failed for 0000001_05249_d_0000009: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:31:46] [WARNING] [__main__] Augmentation noise failed for 0000001_05499_d_0000010: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:31:58] [WARNING] [__main__] Augmentation all failed for 0000001_05499_d_0000010: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:03] [WARNING] [__main__] Augmentation noise failed for 0000001_05999_d_0000011: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:15] [WARNING] [__main__] Augmentation all failed for 0000001_05999_d_0000011: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:20] [WARNING] [__main__] Augmentation noise failed for 0000001_07999_d_0000012: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:32] [WARNING] [__main__] Augmentation all failed for 0000001_07999_d_0000012: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:36] [WARNING] [__main__] Augmentation noise failed for 0000001_08414_d_0000013: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:46] [WARNING] [__main__] Augmentation all failed for 0000001_08414_d_0000013: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:47] [WARNING] [__main__] Augmentation noise failed for 0000002_00005_d_0000014: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:50] [WARNING] [__main__] Augmentation all failed for 0000002_00005_d_0000014: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:51] [WARNING] [__main__] Augmentation noise failed for 0000002_00448_d_0000015: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:54] [WARNING] [__main__] Augmentation all failed for 0000002_00448_d_0000015: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:56] [WARNING] [__main__] Augmentation noise failed for 0000003_00231_d_0000016: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:32:58] [WARNING] [__main__] Augmentation all failed for 0000003_00231_d_0000016: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:33:00] [WARNING] [__main__] Augmentation noise failed for 0000007_04999_d_0000036: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:33:05] [WARNING] [__main__] Augmentation all failed for 0000007_04999_d_0000036: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:33:07] [WARNING] [__main__] Augmentation noise failed for 0000007_05499_d_0000037: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:33:13] [WARNING] [__main__] Augmentation all failed for 0000007_05499_d_0000037: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:33:15] [WARNING] [__main__] Augmentation noise failed for 0000007_05999_d_0000038: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:33:20] [WARNING] [__main__] Augmentation all failed for 0000007_05999_d_0000038: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:33:23] [WARNING] [__main__] Augmentation noise failed for 0000008_00889_d_0000039: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:38:36] [INFO] [__main__] === AegisVision Data Preparation ===
+[2026-03-22 15:38:36] [INFO] [__main__] Processing VisDrone from K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\visdrone
+[2026-03-22 15:38:39] [INFO] [__main__] VisDrone: 160 train, 40 val, 0 skipped
+[2026-03-22 15:38:39] [INFO] [__main__] Processing DOTA from K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\dota
+[2026-03-22 15:39:47] [INFO] [__main__] DOTA: 154 train, 40 val, 6 skipped
+[2026-03-22 15:39:47] [INFO] [__main__] Processing HIT-UAV thermal dataset from K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\hituav
+[2026-03-22 15:39:49] [INFO] [__main__] HIT-UAV: 160 train, 40 val, 0 skipped
+[2026-03-22 15:39:49] [INFO] [__main__] Data preparation complete. dataset.yaml updated.
+[2026-03-22 15:39:49] [INFO] [__main__] Run training with: python models/yolo/train.py
+[2026-03-22 15:40:02] [INFO] [__main__] === AegisVision Data Augmentation ===
+[2026-03-22 15:40:02] [INFO] [__main__] This expands your training set by generating fog, blur, noise, and combined variants.
+[2026-03-22 15:40:02] [INFO] [__main__] Augmenting 314 training images (will create 1570 augmented copies)
+[2026-03-22 15:40:21] [WARNING] [__main__] Augmentation all failed for 0000001_02999_d_0000005: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:40:34] [WARNING] [__main__] Augmentation all failed for 0000001_03499_d_0000006: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:40:49] [WARNING] [__main__] Augmentation all failed for 0000001_03999_d_0000007: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:41:05] [WARNING] [__main__] Augmentation all failed for 0000001_04527_d_0000008: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:41:21] [WARNING] [__main__] Augmentation all failed for 0000001_05249_d_0000009: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:41:35] [WARNING] [__main__] Augmentation all failed for 0000001_05499_d_0000010: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:41:50] [WARNING] [__main__] Augmentation all failed for 0000001_05999_d_0000011: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:42:06] [WARNING] [__main__] Augmentation all failed for 0000001_07999_d_0000012: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:42:22] [WARNING] [__main__] Augmentation all failed for 0000001_08414_d_0000013: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:42:27] [WARNING] [__main__] Augmentation all failed for 0000002_00005_d_0000014: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:42:31] [WARNING] [__main__] Augmentation all failed for 0000002_00448_d_0000015: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:42:35] [WARNING] [__main__] Augmentation all failed for 0000003_00231_d_0000016: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:42:42] [WARNING] [__main__] Augmentation all failed for 0000007_04999_d_0000036: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:42:51] [WARNING] [__main__] Augmentation all failed for 0000007_05499_d_0000037: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:42:58] [WARNING] [__main__] Augmentation all failed for 0000007_05999_d_0000038: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:43:05] [WARNING] [__main__] Augmentation all failed for 0000008_00889_d_0000039: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:43:14] [WARNING] [__main__] Augmentation all failed for 0000008_01999_d_0000040: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:43:22] [WARNING] [__main__] Augmentation all failed for 0000008_02499_d_0000041: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:43:31] [WARNING] [__main__] Augmentation all failed for 0000008_02999_d_0000042: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:43:38] [WARNING] [__main__] Augmentation all failed for 0000008_03499_d_0000043: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:43:45] [WARNING] [__main__] Augmentation all failed for 0000008_03999_d_0000044: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:43:52] [WARNING] [__main__] Augmentation all failed for 0000008_04499_d_0000045: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:00] [WARNING] [__main__] Augmentation all failed for 0000010_00569_d_0000056: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:08] [WARNING] [__main__] Augmentation all failed for 0000010_05149_d_0000057: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:14] [WARNING] [__main__] Augmentation all failed for 0000010_05291_d_0000058: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:18] [WARNING] [__main__] Augmentation all failed for 0000013_00465_d_0000067: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:22] [WARNING] [__main__] Augmentation all failed for 0000016_00420_d_0000068: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:25] [WARNING] [__main__] Augmentation all failed for 0000016_01352_d_0000069: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:29] [WARNING] [__main__] Augmentation all failed for 0000021_00000_d_0000001: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:32] [WARNING] [__main__] Augmentation all failed for 0000021_00500_d_0000002: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:37] [WARNING] [__main__] Augmentation all failed for 0000021_00800_d_0000003: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:42] [WARNING] [__main__] Augmentation all failed for 0000022_00000_d_0000004: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:45] [WARNING] [__main__] Augmentation all failed for 0000022_00500_d_0000005: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:50] [WARNING] [__main__] Augmentation all failed for 0000022_01036_d_0000006: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:54] [WARNING] [__main__] Augmentation all failed for 0000022_01251_d_0000007: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:44:57] [WARNING] [__main__] Augmentation all failed for 0000023_00000_d_0000008: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:45:02] [WARNING] [__main__] Augmentation all failed for 0000023_00300_d_0000009: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:45:05] [WARNING] [__main__] Augmentation all failed for 0000023_00868_d_0000010: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:45:10] [WARNING] [__main__] Augmentation all failed for 0000023_01233_d_0000011: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:45:13] [WARNING] [__main__] Augmentation all failed for 0000024_00000_d_0000012: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:45:17] [WARNING] [__main__] Augmentation all failed for 0000024_00500_d_0000013: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:45:21] [WARNING] [__main__] Augmentation all failed for 0000024_01000_d_0000014: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:45:26] [WARNING] [__main__] Augmentation all failed for 0000024_01543_d_0000015: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:45:33] [WARNING] [__main__] Augmentation all failed for 0000026_00000_d_0000024: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:45:40] [WARNING] [__main__] Augmentation all failed for 0000026_00500_d_0000025: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:45:48] [WARNING] [__main__] Augmentation all failed for 0000026_01000_d_0000026: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:45:56] [WARNING] [__main__] Augmentation all failed for 0000026_01500_d_0000027: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:46:03] [WARNING] [__main__] Augmentation all failed for 0000026_02000_d_0000028: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:46:10] [WARNING] [__main__] Augmentation all failed for 0000026_02500_d_0000029: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:46:17] [WARNING] [__main__] Augmentation all failed for 0000026_03000_d_0000030: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:46:25] [WARNING] [__main__] Augmentation all failed for 0000026_03500_d_0000031: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:46:35] [WARNING] [__main__] Augmentation all failed for 0000026_04000_d_0000032: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:46:41] [WARNING] [__main__] Augmentation all failed for 0000026_04500_d_0000033: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:46:48] [WARNING] [__main__] Augmentation all failed for 0000026_04978_d_0000034: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:46:51] [WARNING] [__main__] Augmentation all failed for 0000030_00754_d_0000036: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:46:56] [WARNING] [__main__] Augmentation all failed for 0000031_00000_d_0000037: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:00] [WARNING] [__main__] Augmentation all failed for 0000031_02000_d_0000041: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:03] [WARNING] [__main__] Augmentation all failed for 0000031_03527_d_0000043: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:08] [WARNING] [__main__] Augmentation all failed for 0000036_00500_d_0000046: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:11] [WARNING] [__main__] Augmentation all failed for 0000036_03591_d_0000048: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:15] [WARNING] [__main__] Augmentation all failed for 0000037_01494_d_0000052: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:19] [WARNING] [__main__] Augmentation all failed for 0000039_00000_d_0000055: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:23] [WARNING] [__main__] Augmentation all failed for 0000039_05300_d_0000061: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:27] [WARNING] [__main__] Augmentation all failed for 0000039_05625_d_0000062: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:31] [WARNING] [__main__] Augmentation all failed for 0000040_01000_d_0000066: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:35] [WARNING] [__main__] Augmentation all failed for 0000040_01500_d_0000067: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:40] [WARNING] [__main__] Augmentation all failed for 0000040_02454_d_0000068: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:44] [WARNING] [__main__] Augmentation all failed for 0000040_03288_d_0000069: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:48] [WARNING] [__main__] Augmentation all failed for 0000040_03752_d_0000070: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:53] [WARNING] [__main__] Augmentation all failed for 0000040_04284_d_0000071: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:47:56] [WARNING] [__main__] Augmentation all failed for 0000042_01000_d_0000074: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:00] [WARNING] [__main__] Augmentation all failed for 0000042_02231_d_0000075: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:03] [WARNING] [__main__] Augmentation all failed for 0000042_02421_d_0000076: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:06] [WARNING] [__main__] Augmentation all failed for 0000043_00500_d_0000077: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:11] [WARNING] [__main__] Augmentation all failed for 0000045_00000_d_0000083: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:15] [WARNING] [__main__] Augmentation all failed for 0000045_00500_d_0000084: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:19] [WARNING] [__main__] Augmentation all failed for 0000045_01032_d_0000085: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:23] [WARNING] [__main__] Augmentation all failed for 0000045_01500_d_0000086: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:27] [WARNING] [__main__] Augmentation all failed for 0000046_00000_d_0000087: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:30] [WARNING] [__main__] Augmentation all failed for 0000046_00720_d_0000088: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:35] [WARNING] [__main__] Augmentation all failed for 0000047_01000_d_0000090: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:39] [WARNING] [__main__] Augmentation all failed for 0000047_02500_d_0000093: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:43] [WARNING] [__main__] Augmentation all failed for 0000047_03500_d_0000095: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:48] [WARNING] [__main__] Augmentation all failed for 0000048_01989_d_0000098: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:52] [WARNING] [__main__] Augmentation all failed for 0000050_00500_d_0000104: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:48:57] [WARNING] [__main__] Augmentation all failed for 0000055_00000_d_0000109: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:49:02] [WARNING] [__main__] Augmentation all failed for 0000055_00714_d_0000110: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:49:06] [WARNING] [__main__] Augmentation all failed for 0000056_00727_d_0000111: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:49:10] [WARNING] [__main__] Augmentation all failed for 0000059_01886_d_0000114: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:49:19] [WARNING] [__main__] Augmentation all failed for 0000068_00001_d_0000001: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:49:27] [WARNING] [__main__] Augmentation all failed for 0000068_00460_d_0000002: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:49:35] [WARNING] [__main__] Augmentation all failed for 0000068_00571_d_0000003: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:49:42] [WARNING] [__main__] Augmentation all failed for 0000068_01001_d_0000004: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:49:48] [WARNING] [__main__] Augmentation all failed for 0000068_01500_d_0000005: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:49:55] [WARNING] [__main__] Augmentation all failed for 0000068_02104_d_0000006: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:50:03] [WARNING] [__main__] Augmentation all failed for 0000068_02648_d_0000007: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:50:10] [WARNING] [__main__] Augmentation all failed for 0000068_02805_d_0000008: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:50:16] [WARNING] [__main__] Augmentation all failed for 0000068_03174_d_0000009: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:50:24] [WARNING] [__main__] Augmentation all failed for 0000068_03388_d_0000010: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:50:31] [WARNING] [__main__] Augmentation all failed for 0000068_03581_d_0000011: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:50:38] [WARNING] [__main__] Augmentation all failed for 0000068_03714_d_0000012: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:50:46] [WARNING] [__main__] Augmentation all failed for 0000068_03918_d_0000013: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:50:54] [WARNING] [__main__] Augmentation all failed for 0000068_04169_d_0000014: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:51:02] [WARNING] [__main__] Augmentation all failed for 0000069_00001_d_0000001: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:51:09] [WARNING] [__main__] Augmentation all failed for 0000069_00483_d_0000002: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:51:17] [WARNING] [__main__] Augmentation all failed for 0000069_00713_d_0000003: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:51:25] [WARNING] [__main__] Augmentation all failed for 0000069_01109_d_0000004: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:51:32] [WARNING] [__main__] Augmentation all failed for 0000069_01878_d_0000005: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:51:41] [WARNING] [__main__] Augmentation all failed for 0000069_02163_d_0000006: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:51:48] [WARNING] [__main__] Augmentation all failed for 0000069_02480_d_0000007: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:51:57] [WARNING] [__main__] Augmentation all failed for 0000070_04722_d_0000001: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:52:03] [WARNING] [__main__] Augmentation all failed for 0000070_05163_d_0000002: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:52:11] [WARNING] [__main__] Augmentation all failed for 0000070_05312_d_0000003: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:52:18] [WARNING] [__main__] Augmentation all failed for 0000070_05776_d_0000004: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:52:26] [WARNING] [__main__] Augmentation all failed for 0000070_05880_d_0000005: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:52:34] [WARNING] [__main__] Augmentation all failed for 0000070_06990_d_0000007: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:52:41] [WARNING] [__main__] Augmentation all failed for 0000071_00007_d_0000001: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:52:49] [WARNING] [__main__] Augmentation all failed for 0000071_02729_d_0000002: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:52:56] [WARNING] [__main__] Augmentation all failed for 0000071_03136_d_0000003: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:53:05] [WARNING] [__main__] Augmentation all failed for 0000071_03281_d_0000004: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:53:13] [WARNING] [__main__] Augmentation all failed for 0000071_03470_d_0000005: 1 validation error for InitSchema
+std_range
+  Value error, All values in (12.5, 25.0) must be >= 0 and <= 1 [type=value_error, input_value=(12.5, 25.0), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+[2026-03-22 15:58:14] [INFO] [__main__] === AegisVision Data Preparation ===
+[2026-03-22 15:58:14] [INFO] [__main__] Processing VisDrone from K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\visdrone
+[2026-03-22 15:58:17] [INFO] [__main__] VisDrone: 160 train, 40 val, 0 skipped
+[2026-03-22 15:58:17] [INFO] [__main__] Processing DOTA from K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\dota
+[2026-03-22 15:59:25] [INFO] [__main__] DOTA: 154 train, 40 val, 6 skipped
+[2026-03-22 15:59:25] [INFO] [__main__] Processing HIT-UAV thermal dataset from K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\hituav
+[2026-03-22 15:59:26] [INFO] [__main__] HIT-UAV: 160 train, 40 val, 0 skipped
+[2026-03-22 15:59:26] [INFO] [__main__] Data preparation complete. dataset.yaml updated.
+[2026-03-22 15:59:26] [INFO] [__main__] Run training with: python models/yolo/train.py
+[2026-03-22 15:59:44] [INFO] [__main__] === AegisVision Data Augmentation ===
+[2026-03-22 15:59:44] [INFO] [__main__] This expands your training set by generating fog, blur, noise, and combined variants.
+[2026-03-22 15:59:44] [INFO] [__main__] Augmenting 314 training images (will create 1570 augmented copies)
+[2026-03-22 19:23:41] [INFO] [__main__] MLflow run started: 6a9e1d6396594ecb802d08fe31352928
+[2026-03-22 19:23:41] [INFO] [__main__] Loading pretrained weights: yolov8n.pt
+[2026-03-22 19:23:41] [INFO] [__main__] Starting training on K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\configs\dataset.yaml
+[2026-03-22 19:23:41] [INFO] [__main__] Epochs: 20, Batch: 4, Device: cpu
+[2026-03-22 19:27:31] [INFO] [__main__] MLflow run started: 9e8520bef7254fd4bdfd255197ad2065
+[2026-03-22 19:27:31] [INFO] [__main__] Loading pretrained weights: yolov8n.pt
+[2026-03-22 19:27:31] [INFO] [__main__] Starting training on K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\configs\dataset.yaml
+[2026-03-22 19:27:31] [INFO] [__main__] Epochs: 5, Batch: 4, Device: cpu
+[2026-03-22 19:28:32] [INFO] [__main__] MLflow run started: 9e229f8e122d47f0a54c54992b93ecb1
+[2026-03-22 19:28:32] [INFO] [__main__] Loading pretrained weights: yolov8n.pt
+[2026-03-22 19:28:32] [INFO] [__main__] Starting training on K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\configs\dataset.yaml
+[2026-03-22 19:28:32] [INFO] [__main__] Epochs: 5, Batch: 4, Device: cpu
+[2026-03-22 19:37:32] [INFO] [__main__] MLflow run started: a855041e6f96411e86b4e5cc4883b6c2
+[2026-03-22 19:37:33] [INFO] [__main__] Loading pretrained weights: yolov8n.pt
+[2026-03-22 19:37:33] [INFO] [__main__] Starting training on K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\configs\dataset.yaml
+[2026-03-22 19:37:33] [INFO] [__main__] Epochs: 1, Batch: 4, Device: cpu
+[2026-03-22 20:03:45] [INFO] [__main__] Training complete. mAP50: 0.0841, mAP50-95: 0.0449
+[2026-03-22 20:03:45] [INFO] [__main__] RGB model auto-saved as K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\models\yolo\weights\best_rgb.pt
+[2026-03-22 20:03:45] [INFO] [__main__] Best model copied from runs\detect\train\weights\best.pt to K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\models\yolo\weights\best.pt
+[2026-03-22 20:09:58] [INFO] [__main__] MLflow run started: 68cd14a67b18492793de607cc9434d7b
+[2026-03-22 20:09:58] [INFO] [__main__] Loading pretrained weights: yolov8n.pt
+[2026-03-22 20:09:58] [INFO] [__main__] Starting training on configs\dataset_thermal.yaml
+[2026-03-22 20:09:58] [INFO] [__main__] Epochs: 1, Batch: 4, Device: cpu
+[2026-03-22 20:12:22] [INFO] [__main__] Training complete. mAP50: 0.0002, mAP50-95: 0.0000
+[2026-03-22 20:12:22] [INFO] [__main__] Thermal model auto-saved as K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\models\yolo\weights\best_thermal.pt
+[2026-03-22 20:12:22] [INFO] [__main__] Best model copied from runs\detect\train\weights\best.pt to K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\models\yolo\weights\best.pt

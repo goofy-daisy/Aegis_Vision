@@ -1,0 +1,32 @@
+[2026-03-18 17:55:50] [DEBUG] [data.loaders.dota_loader] No valid annotations for P0918
+[2026-03-18 17:56:02] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1052
+[2026-03-18 17:56:02] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1054
+[2026-03-18 17:56:08] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1077
+[2026-03-18 17:56:10] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1105
+[2026-03-18 17:56:40] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1198
+[2026-03-18 17:57:10] [INFO] [data.loaders.dota_loader] DOTA processing complete: 154 train, 40 val, 6 skipped
+[2026-03-18 17:57:10] [INFO] [data.loaders.dota_loader] dataset.yaml updated with path: K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\processed
+[2026-03-22 15:28:32] [DEBUG] [data.loaders.dota_loader] No valid annotations for P0918
+[2026-03-22 15:28:43] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1052
+[2026-03-22 15:28:43] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1054
+[2026-03-22 15:28:49] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1077
+[2026-03-22 15:28:51] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1105
+[2026-03-22 15:29:14] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1198
+[2026-03-22 15:29:43] [INFO] [data.loaders.dota_loader] DOTA processing complete: 154 train, 40 val, 6 skipped
+[2026-03-22 15:29:43] [INFO] [data.loaders.dota_loader] dataset.yaml updated with path: K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\processed
+[2026-03-22 15:38:41] [DEBUG] [data.loaders.dota_loader] No valid annotations for P0918
+[2026-03-22 15:38:51] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1052
+[2026-03-22 15:38:51] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1054
+[2026-03-22 15:38:56] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1077
+[2026-03-22 15:38:58] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1105
+[2026-03-22 15:39:21] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1198
+[2026-03-22 15:39:47] [INFO] [data.loaders.dota_loader] DOTA processing complete: 154 train, 40 val, 6 skipped
+[2026-03-22 15:39:47] [INFO] [data.loaders.dota_loader] dataset.yaml updated with path: K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\processed
+[2026-03-22 15:58:19] [DEBUG] [data.loaders.dota_loader] No valid annotations for P0918
+[2026-03-22 15:58:29] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1052
+[2026-03-22 15:58:29] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1054
+[2026-03-22 15:58:34] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1077
+[2026-03-22 15:58:36] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1105
+[2026-03-22 15:58:59] [DEBUG] [data.loaders.dota_loader] No valid annotations for P1198
+[2026-03-22 15:59:25] [INFO] [data.loaders.dota_loader] DOTA processing complete: 154 train, 40 val, 6 skipped
+[2026-03-22 15:59:25] [INFO] [data.loaders.dota_loader] dataset.yaml updated with path: K:\01-KUSHAGRA-CS\1_FUTURE\Projects_Kush\AI_Drone\data\processed
