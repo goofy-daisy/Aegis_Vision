@@ -12,7 +12,7 @@ model:
   yolo_weights_pretrained: "yolov8n.pt"
   yolo_model_size: "n"
   input_size: 640
-  confidence_threshold: 0.40
+  confidence_threshold: 0.25
   nms_iou_threshold: 0.45
   max_detections: 20
   device: "cpu"
@@ -58,8 +58,8 @@ api:
 dashboard:
   port: 8501
   max_fps_display: 30
-  map_center_lat: -37.8136
-  map_center_lon: 144.9631
+  map_center_lat: 28.6139
+  map_center_lon: 77.2090
 
 mlflow:
   experiment_name: "AegisVision"
