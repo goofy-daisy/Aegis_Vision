@@ -205,7 +205,7 @@ def render_sidebar():
         # Start/Stop buttons
         col1, col2 = st.columns(2)
         with col1:
-            if st.button("▶️ Start", type="primary", use_container_width=True):
+            if st.button("▶️ Start", type="primary", width="stretch"):
                 st.session_state.running = True
                 st.session_state.session_complete = False
                 st.session_state.results_log = []
@@ -220,7 +220,7 @@ def render_sidebar():
                 st.session_state.session_id = uuid.uuid4().hex
                 st.session_state.video_out_path = None
         with col2:
-            if st.button("⏹️ Stop", use_container_width=True):
+            if st.button("⏹️ Stop", width="stretch"):
                 st.session_state.running = False
                 st.rerun()
 
@@ -228,9 +228,9 @@ def render_sidebar():
 
         # Export buttons (only when session complete)
         if st.session_state.session_complete:
-            if st.button("💾 Save Results CSV", use_container_width=True):
+            if st.button("💾 Save Results CSV", width="stretch"):
                 export_csv()
-            if st.button("📄 Generate PDF Report", use_container_width=True):
+            if st.button("📄 Generate PDF Report", width="stretch"):
                 export_pdf()
         else:
             st.caption("💾 Export buttons available after video processing completes")
@@ -251,7 +251,7 @@ def export_csv():
         csv,
         f"aegisvision_{st.session_state.session_id[:8]}.csv",
         "text/csv",
-        use_container_width=True
+        width="stretch"
     )
 
 
@@ -278,7 +278,7 @@ def export_pdf():
             pdf_bytes,
             f"AegisVision_Report_{st.session_state.session_id[:8]}.pdf",
             "application/pdf",
-            use_container_width=True
+            width="stretch"
         )
         st.success(f"PDF generated: {output_path.name}")
     except Exception as e:
@@ -388,7 +388,7 @@ def update_object_table(object_table, tracks):
         }
         for t in tracks
     ])
-    object_table.dataframe(df, use_container_width=True, hide_index=True)
+    object_table.dataframe(df, width="stretch", hide_index=True)
 
 
 def update_shap_panel(shap_container, tracks, threat_scorer):
@@ -593,7 +593,7 @@ def update_charts(fps_chart, threat_chart, tracks):
             "Frame": range(len(st.session_state.fps_history)),
             "FPS": list(st.session_state.fps_history),
         })
-        fps_chart.line_chart(fps_df.set_index("Frame"), use_container_width=True)
+        fps_chart.line_chart(fps_df.set_index("Frame"), width="stretch")
 
     # Threat distribution chart
     if tracks:
@@ -602,7 +602,7 @@ def update_charts(fps_chart, threat_chart, tracks):
             "Level": list(threat_counts.keys()),
             "Count": list(threat_counts.values()),
         })
-        threat_chart.bar_chart(threat_df.set_index("Level"), use_container_width=True)
+        threat_chart.bar_chart(threat_df.set_index("Level"), width="stretch")
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -652,7 +652,7 @@ def render_results_panel():
         "Level": list(threat_counts.keys()),
         "Count": list(threat_counts.values()),
     })
-    st.bar_chart(threat_df.set_index("Level"), use_container_width=True)
+    st.bar_chart(threat_df.set_index("Level"), width="stretch")
 
     # Class breakdown
     st.markdown("**Detection by Class**")
@@ -661,7 +661,7 @@ def render_results_panel():
         "Class": list(class_counts.keys()),
         "Count": list(class_counts.values()),
     })
-    st.bar_chart(class_df.set_index("Class"), use_container_width=True)
+    st.bar_chart(class_df.set_index("Class"), width="stretch")
 
     # Object summary
     st.markdown("**Per-Object Summary**")
@@ -696,7 +696,7 @@ def render_results_panel():
         }
         for tid, info in sorted(obj_summary.items())
     ])
-    st.dataframe(summary_df, use_container_width=True, hide_index=True)
+    st.dataframe(summary_df, width="stretch", hide_index=True)
 
     # Export buttons
     col1, col2 = st.columns(2)
@@ -721,7 +721,7 @@ def render_results_panel():
                 video_bytes,
                 f"aegisvision_annotated_{st.session_state.session_id[:8]}.mp4",
                 "video/mp4",
-                use_container_width=True,
+                width="stretch",
                 key="video_download"
             )
 
@@ -803,7 +803,7 @@ def main():
 
             # Update displays
             annotated = cv2.cvtColor(result["annotated_frame"], cv2.COLOR_BGR2RGB)
-            video_placeholder.image(annotated, channels="RGB", use_container_width=True)
+            video_placeholder.image(annotated, channels="RGB", width="stretch")
 
             # Modality badge display
             modality = result.get("modality", "RGB")
@@ -888,7 +888,7 @@ def main():
 
                     # Update displays
                     annotated = cv2.cvtColor(result["annotated_frame"], cv2.COLOR_BGR2RGB)
-                    video_placeholder.image(annotated, channels="RGB", use_container_width=True)
+                    video_placeholder.image(annotated, channels="RGB", width="stretch")
 
                     # Modality badge display
                     modality = result.get("modality", "RGB")
@@ -999,7 +999,7 @@ def main():
             result = st.session_state.pipeline.process_frame(frame, 0, explain)
 
             annotated = cv2.cvtColor(result["annotated_frame"], cv2.COLOR_BGR2RGB)
-            video_placeholder.image(annotated, channels="RGB", use_container_width=True)
+            video_placeholder.image(annotated, channels="RGB", width="stretch")
 
             update_gauges(threat_gauges, result["tracks"])
             update_object_table(object_table, result["tracks"])
