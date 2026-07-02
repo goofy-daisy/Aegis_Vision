@@ -240,29 +240,17 @@ class AegisPipeline:
                 # DeepSORT NMS will handle duplicates
                 detections.extend(thermal_detections)
             
-            # 2.5. Scale detection coordinates back to original frame space
-            # resize_frame uses letterbox: scale = target_size / max(h, w)
-            scale = self.cfg.model.input_size / max(orig_h, orig_w)
-            pad_x = (self.cfg.model.input_size - int(orig_w * scale)) // 2
-            pad_y = (self.cfg.model.input_size - int(orig_h * scale)) // 2
-            
+            # 2.5. YOLOv8 handles letterboxing natively. 
+            # Detections are already in original coordinate space.
+            # No manual scaling needed.
             for det in detections:
-                # Scale xyxy bbox back to original coords
+                # Ensure we calculate xywh for DeepSORT from the native xyxy provided
                 x1, y1, x2, y2 = det["bbox"]
-                det["bbox"] = [
-                    (x1 - pad_x) / scale,
-                    (y1 - pad_y) / scale,
-                    (x2 - pad_x) / scale,
-                    (y2 - pad_y) / scale,
-                ]
-                # Scale xywh (center format) back too - for DeepSORT
-                cx, cy, w, h = det["bbox_xywh"]
-                det["bbox_xywh"] = [
-                    (cx - pad_x) / scale,
-                    (cy - pad_y) / scale,
-                    w / scale,
-                    h / scale,
-                ]
+                w = x2 - x1
+                h = y2 - y1
+                cx = x1 + w / 2
+                cy = y1 + h / 2
+                det["bbox_xywh"] = [float(cx), float(cy), float(w), float(h)]
             
             # 3. DeepSORT tracking - pass ORIGINAL frame for Re-ID crops
             tracks = self.tracker.update(detections, frame)
