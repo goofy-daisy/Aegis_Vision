@@ -144,14 +144,16 @@ def run_inference(
             else:
                 class_name = f"class_{class_id}"
             
-            detection = {
-                "bbox": [float(x1), float(y1), float(x2), float(y2)],
-                "bbox_xywh": [float(cx), float(cy), float(w), float(h)],
-                "class_id": class_id,
-                "class_name": class_name,
-                "confidence": confidence,
-            }
-            detections.append(detection)
+            # Ensure bbox has positive area to prevent downstream tracking errors
+            if w > 0 and h > 0:
+                detection = {
+                    "bbox": [float(x1), float(y1), float(x2), float(y2)],
+                    "bbox_xywh": [float(cx), float(cy), float(w), float(h)],
+                    "class_id": class_id,
+                    "class_name": class_name,
+                    "confidence": confidence,
+                }
+                detections.append(detection)
     
     logger.debug(f"Detected {len(detections)} objects")
     return detections
